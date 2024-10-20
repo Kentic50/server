@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayZ Server</title>
+    <link rel="stylesheet" href="server.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="file:///C:/Users/%D0%9F%D1%80%D0%B8%D1%88%D0%B5%D0%BB%D0%B5%D0%BD%D0%B5%D1%86/Downloads/images-removebg-preview%20(3).png">
+        <nav id="menu">
+            <a href="#" class="menu-link">Discord</a>
+            <a href="#" class="menu-link">Telegram</a>
+            <a href="#about" class="menu-link">Про нас</a>
+        </nav>
+    </header>
+
+    <section class="server-info">
+        <h1>Добро пожаловать на сервер DayZ</h1>
+        <p>Наш сервер был запущен вчера, и уже достиг среднего онлайна для подобных серверов!</p>
+        <p>Присоединяйтесь, и следите за новостями, обновлениями и событиями!</p>
+    </section>
+    <section class="server">
+        <div ><h1>новости</h1></div>
+            <div class="slider">
+        <div class="slides">
+            <!-- Слайды -->
+            <div class="slide">
+                <img src="https://i.imgur.com/oep1YDh.gif" alt="Новость 1">
+                <p>Патч 16.08: Новые механики и снаряжение!</p>
+            </div>
+            <div class="slide">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/922548284039317926/928D3B408CA84F80B68E60AE3DDA1D640EDC0B76/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Новость 2">
+                <p>Патч 16.07: Выживание в зомби-апокалипсисе!</p>
+            </div>
+            <div class="slide">
+                <img src="https://j.gifs.com/1wr7wj.gif" alt="Новость 3">
+                <p>Патч 16.10: Улучшенные карты и локации.</p>
+            </div>
+        </div>
+        <!-- Навигация по слайдам -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+
+    </section>
+    <div class="video-text-container">
+    <video width="1000" controls>
+        <source src="video.mp4" type="video/mp4">
+        
+    </video>
+    <div class="text-content">
+        <h2>Новое обновление 16.10</h2>
+        <p>в этом обновлении мы переделали карты тем самым улучшив их</p><p>переделали локации</p><p>пофиксили баги которые были не убраны в прошлом обновлении 16.09</p>
+    </div>
+</div>
+    <section id="about" class="about">
+        <h2>Про нас</h2>
+        <p>Этот сервер создан для настоящих фанатов DayZ. Мы предлагаем уникальный игровой опыт с новыми событиями, активной поддержкой, и дружелюбным комьюнити. Наш сервер предоставляет стабильный и интересный игровой процесс, а также регулярные обновления для поддержания динамики игры.</p>
+    <div class="textt">
+        <h1>Мы в социальных сетях</h1>
+    </div>
+    <div class="discord">
+    <img src="file:///C:/Users/%D0%9F%D1%80%D0%B8%D1%88%D0%B5%D0%BB%D0%B5%D0%BD%D0%B5%D1%86/Downloads/png-transparent-discord-computer-icons-gamer-logo-others-logo-video-game-smiley-removebg-preview.png" height="80">
+    <img src="file:///C:/Users/%D0%9F%D1%80%D0%B8%D1%88%D0%B5%D0%BB%D0%B5%D0%BD%D0%B5%D1%86/Downloads/pngtree-instagram-black-and-white-icon-png-image_6618439-removebg-preview.png" height="80">
+    <img src="file:///C:/Users/%D0%9F%D1%80%D0%B8%D1%88%D0%B5%D0%BB%D0%B5%D0%BD%D0%B5%D1%86/Downloads/png-transparent-social-media-youtube-computer-icons-icon-systems-inc-music-youtube-text-logo-media-removebg-preview.png" height="80"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 DayZ Server. Все права защищены.</p>
+    </footer>
+    <script type="text/javascript">
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+    }
+</script>
+</script>
+</body>
+</html>
