@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #1b1b1b;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://j.gifs.com/vVrRoE.gif');
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    align-items: height;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0;
+}
+
+.logo img {
+    height: 300px;
+}
+
+#menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.menu-link:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.server-info {
+    text-align: center;
+    padding: 50px;
+    background-color: #292929;
+}
+
+.server-info h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.server-info p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about {
+    padding: 40px;
+    background-color: #232323;
+    height: 800px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
+footer p {
+    font-size: 14px;
+    color: gray;
+}
+
+.server {
+    background-color: #121212;
+    text-align: center;
+    font-size: 36px;
+    height: 700px;
+
+}
+
+.slider {
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #292929;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-size: 24px;
+}
+
+/* Кнопки управления слайдером */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-text-container {
+    display: flex; /* Используем flexbox */
+    justify-content: space-between; /* Распределяем контент по сторонам */
+    align-items: center; /* Вертикальное выравнивание элементов по центру */
+    gap:0px; /* Отступ между видео и текстом */
+}
+
+video {
+    max-width: 100; /* Ограничиваем максимальную ширину видео */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.text-content {
+    max-width: 50%; /* Ограничиваем ширину текста */
+    color: white;
+    padding: 200px
+}
+
+body {
+    background-color: #1b1b1b; /* Цвет фона */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.textt{
+    text-align: left;
+    margin: 100px;
+    padding: 20px;
+}
+
+.discord{
+    text-align: left;
+    position: absolute;
+}
